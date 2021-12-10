@@ -1,3 +1,16 @@
-p
-  color: green
-~
+@import _media.sass
+@import _reset.sass
+@import _const.sass
+
+@font-face
+  font-family: "RobotoRegular"
+  src: url('assets/fonts/Roboto/Roboto-Regular/Roboto-Regular.woff')
+  format: ("woff")
+  font-weight: 400
+  font-style: normal
+
+body
+  font-size: 16px
+  font-family: "Robotoregular", serif
+  p
+    color: $txt
