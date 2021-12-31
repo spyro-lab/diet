@@ -4,10 +4,700 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="assets/libs/tabs/responsive-tabs.css" />
+		<link rel="stylesheet" href="assets/libs/tabs/style.css" />
+		<link rel="stylesheet" href="assets/libs/slick-1.8.1/slick/slick.css" />
+		<link
+			rel="stylesheet"
+			href="assets/libs/slick-1.8.1/slick/slick-theme.css"
+		/>
+		<link rel="stylesheet" href="assets/libs/animate.css">
 		<link rel="stylesheet" href="main.css" />
 		<title>Главная</title>
+
+		<!-- <script src="assets/libs/jquery.js"></script> -->
 	</head>
 	<body>
+		<div id="close"></div>
+		<header>
+			<div class="container">
+				<nav class="top_line">
+					<a href="#" id="logo" class="wow bounceIn animate__bounceIn">Aina Poddubnykh</a>
+					<ul class="top_nav wow bounceIn animate__bounceIn">
+						<li><a href="#navformat">Фортмат участия</a></li>
+						<li><a href="#reviews">Отзывы</a></li>
+					</ul>
+					<div class="soc_bar">
+						<a href="#">
+							<img
+								class="telegram"
+								src="assets/images/soc_icons/telegram.png"
+								alt="telegram"
+							/>
+						</a>
+						<a href="#">
+							<img
+								class="instagram"
+								src="assets/images/soc_icons/instagram.png"
+								alt="instagram"
+							/>
+						</a>
+					</div>
+					<div class="button_wrapper">
+						<a href="#popup" class="button_default top_nav_button">
+							записаться
+						</a>
+					</div>
+				</nav>
+
+				<div class="main_head">
+					<article class="wow rubberBand animate__rubberBand">
+						<h1>Антимарафон</h1>
+						<span>#БЕЗ_ДИЕТ</span>
+						<p class="tagline_text">
+							Авторская программа похудения на 2-5 кг без счета калорий,
+							голодных диет и эмоциональных качелей.
+						</p>
+						<div class="button_wrapper">
+							<a href="#popup" class="button_default btn_head">записаться</a>
+							<a href="#tab-2" class="button_header">подробнее</a>
+						</div>
+					</article>
+					<div class="my_foto">
+						<img class="my_foto_img animate__bounceInRight" src="assets/images/header.jpg" alt="I" />
+						<p class="tagline">
+							© Авторский проект нутрициолога Алён Поддубной
+						</p>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="benefits">
+			<div class="container">
+				<h1>МОЙ АНТИМАРАФОН <span>#БЕЗ_ДИЕТ</span> ПОМОЖЕТ:</h1>
+				<div class="wrapper_benefits">
+					<div class="benefits ale">
+						<div class="item_benefits">
+							<img src="assets/images/check.png" alt="check" />
+							<div class="text_benefits">
+								<span>Убрать от 2 до 5 кг лишнего веса</span> без счета калорий,
+								длительной подготовки и длинных, скучных рецептов
+							</div>
+						</div>
+						<div class="item_benefits">
+							<img src="assets/images/check.png" alt="check" />
+							<div class="text_benefits">
+								<span>Уменьшить высыпания и целлюлит</span> и убрать отёчность
+								от неправильной еды
+							</div>
+						</div>
+						<div class="item_benefits">
+							<img src="assets/images/check.png" alt="check" />
+							<div class="text_benefits">
+								<span>Проработать срывы на сладкое,</span> отпустить чувство
+								вины и потерю мотивации за отсутствие результата
+							</div>
+						</div>
+					</div>
+					<div class="benefits2">
+						<div class="item_benefits">
+							<img src="assets/images/check.png" alt="check" />
+							<div class="text_benefits">
+								Выстроить простой и понятный режим питания и улучшить работу ЖКТ
+								<span>без сложного графика питания</span>
+							</div>
+						</div>
+						<div class="item_benefits">
+							<img src="assets/images/check.png" alt="check" />
+							<div class="text_benefits">
+								<span>Уменьшить высыпания и целлюлит</span> и убрать отёчность
+								от неправильной еды
+							</div>
+						</div>
+						<div class="item_benefits">
+							<img src="assets/images/check.png" alt="check" />
+							<div class="text_benefits">
+								<span>Проработать срывы на сладкое,</span> отпустить чувство
+								вины и потерю мотивации за отсутствие результата
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="experience">
+			<div class="container">
+				<h1>Кейсы наших участниц!</h1>
+				<div class="container-slider">
+					<div class="wrapper-slider">
+						<img class="my_foto_img" src="assets/images/keys/1.jpeg" alt="I" />
+						<img class="my_foto_img" src="assets/images/keys/2.jpeg" alt="I" />
+						<img class="my_foto_img" src="assets/images/keys/3.jfif" alt="I" />
+						<img class="my_foto_img" src="assets/images/keys/3.jfif" alt="I" />
+					</div>
+					<div class="button_wrapper">
+						<a
+							href="#popup"
+							class="button_default top_nav_button button_experience"
+						>
+							принять участие
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="stages">
+			<div class="container">
+				<h1>4 НЕДЕЛИ И 4 ЭТАПА ПОХУДЕНИЯ:</h1>
+				<div id="responsiveTabsDemo" class="container_tab">
+					<ul>
+						<li><a href="#tab-1">Недея 1</a></li>
+						<li><a href="#tab-2">Неделя 2</a></li>
+						<li><a href="#tab-3">Неделя 3</a></li>
+						<li><a href="#tab-4">Неделя 4</a></li>
+					</ul>
+					<div id="tab-1" class="tabs">
+						<div class="wrapper_tabs">
+							<div class="wrapper_img">
+								<img src="assets/images/tabsImg/1tab.jpeg" alt="Метаболизм" />
+							</div>
+							<div class="wrapper_content_tabs">
+								<h2>МЕТАБОЛИЗМ</h2>
+								<p>
+									Открываем тему запуска метаболизма и похудения за счет
+									чередования схем дня с разной калорийностью:
+								</p>
+								<p>День 1. Механизм похудения: что меняется внутри нас</p>
+								<p>
+									День 2. Факторы влияния на похудение: как ускорить процесс
+								</p>
+								<p>
+									День 3. Физический и эмоциональный аппетит. Якоря в продуктах.
+								</p>
+								<p>
+									День 4. Правила выбора продуктов. Схема компенсациия калорий.
+								</p>
+								<p>День 5. Внутренняя мотивация для похудения без пауз.</p>
+								<p>День 6. Обновление меню</p>
+								<p>День 7. Отчет недели и план на следующий этап.</p>
+							</div>
+						</div>
+					</div>
+					<div id="tab-2">
+						<div class="wrapper_tabs">
+							<div class="wrapper_img">
+								<img src="assets/images/tabsImg/2tab.jpeg" alt="Метаболизм" />
+							</div>
+							<div class="wrapper_content_tabs">
+								<h2>ЗДОРОВЬЕ</h2>
+								<p>
+									Выравнивания нормы белков и жиров для ускорения метаболизма
+									для обхода плато
+								</p>
+								<p>
+									День 8. Щелочная вода и напитки в рационе. Их влияние на вес.
+									Обогащение воды.
+								</p>
+								<p>
+									День 9. Влияние питания на отёки и целлюлит. Смена конституции
+									тела
+								</p>
+								<p>День 10. Инсулиновый индекс продуктов</p>
+								<p>День 11. Детоксы и загрузочные дни</p>
+								<p>День 12. Срывы и заедание стресса: как управлять эмоциями</p>
+								<p>День 13. Обновление меню</p>
+								<p>День 14. Отчет недели и план на следущий этап</p>
+							</div>
+						</div>
+					</div>
+					<div id="tab-3">
+						<div class="wrapper_tabs">
+							<div class="wrapper_img">
+								<img src="assets/images/tabsImg/3tab.jpeg" alt="Метаболизм" />
+							</div>
+							<div class="wrapper_content_tabs">
+								<h2>ПОХУДЕНИЕ</h2>
+								<p>Подготовка и восстановление после праздников</p>
+								<p>День 22. Схема быстрого восстановления после застолья</p>
+								<p>День 23. Правила комбинации еды и алкоголя</p>
+								<p>День 24. Примеры праздничного меню</p>
+								<p>
+									День 25. Эмоциональный настрой и отношение к еде в праздничные
+									дни
+								</p>
+								<p>
+									День 26. Итоги курса и специальные новогодние подарки
+									участницам
+								</p>
+							</div>
+						</div>
+					</div>
+					<div id="tab-4">
+						<div class="wrapper_tabs">
+							<div class="wrapper_img">
+								<img src="assets/images/tabsImg/4tab.jpeg" alt="Метаболизм" />
+							</div>
+							<div class="wrapper_content_tabs">
+								<h2>ВОССТАНОВЛЕНИЕ</h2>
+								<p>
+									Открываем тему запуска метаболизма и похудения за счет
+									чередования схем дня с разной калорийностью:
+								</p>
+								<p>День 1. Механизм похудения: что меняется внутри нас</p>
+								<p>
+									День 2. Факторы влияния на похудение: как ускорить процесс
+								</p>
+								<p>
+									День 3. Физический и эмоциональный аппетит. Якоря в продуктах.
+								</p>
+								<p>
+									День 4. Правила выбора продуктов. Схема компенсациия калорий.
+								</p>
+								<p>День 5. Внутренняя мотивация для похудения без пауз.</p>
+								<p>День 6. Обновление меню</p>
+								<p>День 7. Отчет недели и план на следующий этап.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="button_wrapper">
+					<a
+						href="#popup"
+						class="button_default top_nav_button button_experience"
+					>
+						принять участие
+					</a>
+				</div>
+			</div>
+		</section>
+		<section class="example">
+			<div class="container">
+				<h1>Примеры еды участниц</h1>
+				<p>Да, они готовыили эту вкуснятину по моим быстрым рецептам :)</p>
+				<div class="wrapper_examp_img  ">
+					<div class="item_img">
+						<img class="wow flip animate__flip" src="assets/images/example/1.webp" alt="food" />
+					</div>
+					<div class="item_img">
+						<img class="wow flip animate__flip" src="assets/images/example/2.webp" alt="food" />
+					</div>
+					<div class="item_img">
+						<img class="wow flip animate__flip" src="assets/images/example/3.webp" alt="food" />
+					</div>
+					<div class="item_img">
+						<img class="wow flip animate__flip" src="assets/images/example/4.webp" alt="food" />
+					</div>
+					<div class="item_img">
+						<img class="wow flip animate__flip" src="assets/images/example/5.webp" alt="food" />
+					</div>
+					<div class="item_img">
+						<img class="wow flip animate__flip" src="assets/images/example/6.webp" alt="food" />
+					</div>
+					<div class="item_img">
+						<img class="wow flip animate__flip" src="assets/images/example/7.webp" alt="food" />
+					</div>
+					<div class="item_img">
+						<img class="wow flip animate__flip" src="assets/images/example/8.webp" alt="food" />
+					</div>
+				</div>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="format" id="navformat">
+			<div class="container">
+				<div class="wrapper_format">
+					<div class="test">
+						<h3 class="label">Формат участия</h3>
+						<p>доступ к материалам 2 мес</p>
+						<hr />
+						<h3 class="price">899 грн</h3>
+						<ul>
+							<li><span>Наполнение минимального тарифа</span></li>
+							<li>
+								<span>4 неделя для праздников и корпоратив без лишних кг</span>
+							</li>
+							<li>
+								<span>Новые утренние зарядки для запуска метаболизма</span>
+							</li>
+							<li>
+								<span>
+									3 авторские медитации (любовь к телу, благодарность,
+									наполненное состояние)</span
+								>
+							</li>
+							<li><span>Новогодние подарки от автора курса</span></li>
+							<li>
+								<span>Чат для обратной связи и разбора личных вопросах</span>
+							</li>
+							<li>
+								<span>
+									Специальный отчет недели для повышения мотивации к
+									прохождению</span
+								>
+							</li>
+						</ul>
+						<div class="button_wrapper">
+							<a
+								href="#popup"
+								class="button_default top_nav_button button_experience"
+							>
+								принять участие
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="clients" id="reviews">
+			<div class="container">
+				<h1>ЧТО ГОВОРЯТ МОИ КЛИЕНТЫ?</h1>
+
+				<div class="slider_reviews">
+					<div class="item_reviews">
+						<img
+							class="reviews_img"
+							src="assets/images/reviews/1.webp"
+							alt="I"
+						/>
+						<div class="wrap_text">
+							<p>
+								Алёна, ещё раз спасибо тебе огромное за то, что ты в меня
+								вложила! Правда, искренне тебе благодарна за твой осознанный
+								подход к питанию и тому, что ты научила этому и меня!❤️
+								Благодаря тебе я научилась понимать свои мотивы, научилась
+								меньше хотеть сладкого и порой и вовсе без него обходится🙂
+								Научилась не корить себя, а правильно строить граффик питания,
+								если съела лишнего в один приём пищи, научилась не обесценивать
+								и получать удовольствие от здоровой еды, ведь по твоим рецептам
+								она ооочень вкусная! 😘❤️ Ты нутрициолог для гурманов. И очень
+								классно чувствуешь потребности своих клиентов😘
+							</p>
+							<p class="name">Оля Карнаух</p>
+						</div>
+					</div>
+
+					<div class="item_reviews">
+						<img
+							class="reviews_img"
+							src="assets/images/reviews/2.webp"
+							alt="I"
+						/>
+						<div class="wrap_text">
+							<p>
+								Огромное спасибо Алене за поддержку и профессионализм в
+								персональной работе и сопровождении.😊 Это был очень интересный
+								и полезный для меня опыт. По окончанию работы, я внедрила в
+								ежедневный рацион семьи новые, вкусные и полезные рецепты.
+							</p>
+							<p class="name">Оля Карнаух</p>
+						</div>
+					</div>
+
+					<div class="item_reviews">
+						<img
+							class="reviews_img"
+							src="assets/images/reviews/3.webp"
+							alt="I"
+						/>
+						<div class="wrap_text">
+							<p>
+								Алёна, спасибо огромное за последние 2 месяца ❤️❤️❤️настрой,
+								ведение, поддержку и выработанные условные рефлексы в питании!
+								Чувство легкости в теле, обретение и ощущение своего тела заново
+								- то, что не удавалось сделать за последний год - было легко
+								сделать с тобой, без чувства голода и страха и впервые с мыслью,
+								что так питаться можно всегда! ☺️Спасибо!!! Всем рекомендую!
+								👍Обязательно вернусь на осенне-зимний check up! ❤️
+							</p>
+							<p class="name">Рита Трубецкая</p>
+						</div>
+					</div>
+				</div>
+
+				<h1 class="about">ЧТО ТЕБЕ НУЖНО ЗНАТЬ ПРО МЕНЯ?</h1>
+				<div class="wrapper_about">
+					<div class="wrapper_text wow fli animate__flip">
+						<p>
+							Я <span class="name">Алёна Поддубная</span>, нутрициолог и
+							человек, который поможет тебе достичь желаемой цели в весе и
+							научит питаться здорово и вкусно с учетом особенностей организма.
+						</p>
+						<p class="accent">За 5 лет практики я:</p>
+						<div class="list_wrapper">
+							<div class="item_list">
+								<span>*</span>
+								<p>Дипломировалась в Академии фитнеса Украины и Stanford</p>
+							</div>
+
+							<div class="item_list">
+								<span>*</span>
+								<p>
+									Обучалась онлайн в University School of Medicine Career Center
+								</p>
+							</div>
+
+							<div class="item_list">
+								<span>*</span>
+								<p>Изучила тему диабета при Университете Копенгагена</p>
+							</div>
+
+							<div class="item_list">
+								<span>*</span>
+								<p>Написала авторскую книгу на 150 рецептов</p>
+							</div>
+
+							<div class="item_list">
+								<span>*</span>
+								<p>Провела 5 кулинарных марафонов</p>
+							</div>
+
+							<div class="item_list">
+								<span>*</span>
+								<p>Посетила более 20 кулинарных мастер-классов</p>
+							</div>
+
+							<div class="item_list">
+								<span>*</span>
+								<p>Собрала более 50 схем питания для снижения веса</p>
+							</div>
+
+							<div class="item_list">
+								<span>*</span>
+								<p>Победила булимию и убрала 10 кг лишнего веса</p>
+							</div>
+
+							<div class="item_list">
+								<span>*</span>
+								<p>
+									Разработала методику выстраивания рациона без счета калорий
+								</p>
+							</div>
+						</div>
+					</div>
+					<img src="assets/images/I.jpg" class="wow fli animate__flip" alt="I" />
+				</div>
+				<h1 class="form_label">ОСТАЛИСЬ ВОПРОСЫ?</h1>
+				<p class="sub_label">
+					Заполни форму и менеджер свяжется с тобой в течении суток.
+				</p>
+				<div class="wrapper_forma">
+					<form
+						enctype="multipart/form-data"
+						method="post"
+						onsubmit="send(event, 'send.php')"
+						id="form"
+						class="form-body wow bounceInLeft"
+						action="telegram.php"
+					>
+						<div class="wrapper-contact">
+							<input
+								title="Имя может содержать только буквы"
+								pattern="[A-Za-zА-Яа-яЁёІіЇїЄє'’ʼ]{2,20}"
+								placeholder="Имя*"
+								id="formName"
+								name="name"
+								class="form-input _req"
+								type="text"
+							/>
+							<div class="phone_wrapper">
+								<span>+380</span>
+								<input
+									type="tel"
+									id="formNumber"
+									class="form-input _req"
+									name="number"
+									type="tel"
+									value=""
+									placeholder="(99) 999-99-99"
+									data-phonemask-code="+380"
+									data-phonemask-mask="+380(99) 999-99-99"
+									maxlength="9"
+									minlength="9"
+									pattern="[0-9]+"
+									data-phonemask-without-code="(99) 999-99-99"
+									style="color: rgb(0, 0, 0)"
+									data-phonemask-flag="ua"
+								/>
+							</div>
+						</div>
+						<p>*для связи в Telegram/Viber/WhatsApp</p>
+						<textarea
+							name="message"
+							id="forMessage"
+							cols="10"
+							class="form-input"
+							rows="1"
+						></textarea>
+						<button type="submit" class="btn-callback button_default">
+							Оформить заявку
+						</button>
+						<p class="oferta">
+							Нажимая "Отправить" вы даете согласие на Политику
+							Конфиденциальности и Публичную Оферту.
+						</p>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section class="question">
+			<div class="container">
+				<h1>А ЕСЛИ КУРС НЕ ПОНРАВИТСЯ?</h1>
+				<p>
+					Все ок. Я, конечно, готовлю вкусно, но не тортик, чтобы всем нравится!
+					Если курс/формат тебе не зайдет, ты можешь вернуть деньги в течение 3
+					дней после старта!
+				</p>
+				<div class="question_wrapper">
+					<div class="item_question wow rotateIn animate__rotateIn">
+						<h3>Можно ли заморозить абонемент?</h3>
+						<p>
+							К сожалению формат марафона не предполагает заморозки( Следи за
+							информацией в Инстаграм, чтобы узнать о новых запусках.
+						</p>
+					</div>
+					<div class="item_question wow rotateIn animate__rotateIn">
+						<h3>Хочу подарить участие в вашем курсе. Как это сделать?</h3>
+						<p>
+							Отличный подарок :) Оставь, пожалуйста, заявку на сайте под
+							курсом, который хочешь подарить. С тобой свяжется менеджер и
+							расскажет про условия. Затем нужно оплатить курс, оставить данные
+							человека, которому ты даришь участие и мы подключим её курсу.
+						</p>
+					</div>
+					<div class="item_question wow rotateIn animate__rotateIn">
+						<h3>Могу ли я вернуть деньги за курс?</h3>
+						<p>
+							Если по каким-то причинам тебе не подошел наш курс - в течении 3-х
+							дней мы возвращаем полную стоимость. Для возврата средств тебе
+							нужно просто написать мне.
+						</p>
+					</div>
+					<div class="item_question wow rotateIn animate__rotateIn">
+						<h3>Что делать, если возникли технические неполадки?</h3>
+						<p>
+							Если у тебя возникли технические неполадки (не открывается доступ
+							к курсу, не получается подключиться к чату и т.д.), напиши,
+							пожалуйста, мне.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<div class="wrapper_footer">
+					<div class="soc_footer">
+						<a href="#" id="logo_footer">Aina Poddubnykh</a>
+						<div class="wrap_soc">
+							<a href="#">
+								<img
+									class="instagramm"
+									src="assets/images/soc_icons/telegram.png"
+									alt="instagram"
+								/>
+							</a>
+							<a href="#">
+								<img
+									class="instagramm"
+									src="assets/images/soc_icons/instagram.png"
+									alt="instagram"
+								/>
+							</a>
+						</div>
+					</div>
+					<div class="contact">
+						<h3>КОНТАКТЫ</h3>
+						<a href="tel:380637751125">+380 63 775 11 25</a>
+						<p id="footer_emal">info@poddubnaya.com</p>
+					</div>
+					<div class="payment">
+						<h3>ПРИНИМАЕМ</h3>
+						<img src="assets/images/visa-mastercard.png" alt="visa" />
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Создание POPUP -->
+		<div id="popup" class="popup">
+			<a href="#close" class="popup_area"></a>
+			<div class="popup_body">
+				<div class="popup_content">
+					<a href="#close" class="popup_close">X</a>
+					<div class="popup_text">
+						<form enctype="multipart/form-data" method="post" onsubmit="send(event, 'send.php')" id="form" action="telegram.php" class="form-body">
+							<div class="wrapper-contact">
+								<h2>
+									Регистрация участия на участие в авторском антимарафоне
+									похудения #без_диет
+								</h2>
+								<p class="text_form">
+									Заполни форму и менеджер свяжется с тобой в течении суток.
+								</p>
+								
+								<div class="phone_wrapper">
+									<span>+380</span>
+									<input
+										type="tel"
+										id="formNumber"
+										class="form-input _req"
+										name="number"
+										type="tel"
+										value=""
+										placeholder="(99) 999-99-99"
+										data-phonemask-code="+380"
+										data-phonemask-mask="+380(99) 999-99-99"
+										maxlength="9"
+										minlength="9"
+										pattern="[0-9]+"
+										data-phonemask-without-code="(99) 999-99-99"
+										style="color: rgb(0, 0, 0)"
+										data-phonemask-flag="ua"
+									/>
+								</div>
+								<input
+									title="Имя может содержать только буквы"
+									pattern="[A-Za-zА-Яа-яЁёІіЇїЄє'’ʼ]{2,20}"
+									placeholder="Ваше имя*"
+									id="formName"
+									name="name"
+									class="form-input _req"
+									type="text"
+								/>
+							</div>
+							<textarea
+								placeholder="Коментарий"
+								name="message"
+								id="forMessage"
+								cols="30"
+								class="form-input"
+								rows="10"
+							></textarea>
+							<button type="submit" class="button_default btn_form">
+								Оформить заявку
+							</button>
+							<p class="oferta">
+								Нажимая «Отправить» вы даете согласие на Политику
+								Конфиденциальности и Публичную Оферту.
+							</p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="assets/libs/jquery.js"></script>
+		<script src="assets/libs/wow.min.js" ></script>
+		<script src="assets/libs/tabs/jquery.responsiveTabs.js"></script>
+		<script src="assets/libs/slick-1.8.1/slick/slick.min.js"></script>
 		<script src="main.js"></script>
 	</body>
 </html>
