@@ -1216,18 +1216,46 @@ footer .container .wrapper_footer .payment img {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
+  .clients .container .slider_reviews .slick-prev:before {
+    font-size: 35px;
+  }
+  .clients .container .slider_reviews .slick-next:before {
+    font-size: 35px;
+  }
+  .clients .container .slider_reviews .slick-prev {
+    z-index: 2;
+  }
+  .clients .container .slider_reviews .slick-next {
+    z-index: 2;
+  }
   .experience .container .container-slider .wrapper-slider {
     width: 350px;
   }
-  .experience .container .container-slider .slick-next {
-    left: 265px;
-    display: none;
+  .experience .container .container-slider .slick-prev:before {
+    font-size: 35px;
+  }
+  .experience .container .container-slider .slick-next:before {
+    font-size: 35px;
   }
   .experience .container .container-slider .slick-prev {
-    right: 4px;
+    position: relative;
+    bottom: -660px;
+    left: 37%;
     z-index: 2;
   }
+  .experience .container .container-slider .slick-next {
+    position: relative;
+    top: 8px;
+    left: 50%;
+    z-index: 2;
+  }
+  .experience .container .container-slider .slick-dots {
+    bottom: -45px;
+  }
+}
+
+@media (max-width: 400px) {
   body h1 {
     font-size: 40px;
   }

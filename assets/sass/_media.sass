@@ -120,7 +120,6 @@
     width: 400px
   .clients .container .item_reviews img
     width: 350px
-
 @media (max-width: 464px)
   .clients .container .slider_reviews
     width: 300px
@@ -141,18 +140,42 @@
           width: 300px
         .slick-next
           right: -33px
-@media (max-width: 400px)
+@media (max-width: 450px)
+  .clients
+    .container
+      .slider_reviews
+        .wrapper-slider
+        .slick-prev:before
+          font-size: 35px
+        .slick-next:before
+          font-size: 35px
+        .slick-prev
+          z-index: 2
+        .slick-next
+          z-index: 2
   .experience
     .container
       .container-slider
         .wrapper-slider
           width: 350px
-        .slick-next
-          left: 265px
-          display: none
+        .slick-prev:before
+          font-size: 35px
+        .slick-next:before
+          font-size: 35px
         .slick-prev
-          right: 4px
+          position: relative
+          bottom: -660px
+          left: 37%
           z-index: 2
+        .slick-next
+          position: relative
+          top: 8px
+          left: 50%
+          z-index: 2
+        .slick-dots
+          bottom: -45px
+@media (max-width: 400px)
+
   .item_reviews
     // position: relative
     // left: 10px
